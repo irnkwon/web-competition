@@ -1,10 +1,27 @@
+
+/*
+    General
+*/
+$(document).ready(function() {
+    scrollDown();
+    moveRight();
+});
+
 /*
     Scroll Down
 */
-$(document).ready(function() {
-    $('.scroll-down').click(function() {
-        $('html, body').animate({
-            scrollTop: $('#visit').offset().top
+function scrollDown() {
+    $(".learn-more").click(function() {
+        $("html, body").animate({
+            scrollTop: $("#visit").offset().top
         }, 150);
     });
-});
+}
+
+/*
+    Slider
+*/
+function moveRight() {
+    $(".fa-chevron-right").click(function(){
+    });
+}
