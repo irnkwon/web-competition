@@ -55,7 +55,7 @@ li:hover, a:hover {
     width: 100%;
     height: 100px;
     color: #FFFFFF;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo {
@@ -83,17 +83,65 @@ li:hover, a:hover {
     Home
 */
 #home {
-    background: url(../images/landing-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 0 20%;
+}
+
+.learn-more {
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    margin: 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px #FFFFFF solid;
+}
+
+.learn-more:hover {
+    background: #000000;
+    border-color: #000000;
+}
+
+
+/*
+    Slider
+*/
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    width: 100%;
+}
+
+.slide::after {
+    font-size: 2.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+}
+
+.arrows {
+    position: absolute;
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+    width: 100%;
+    z-index: 0;
 }
 
 .fa-chevron-left {
@@ -114,20 +162,50 @@ li:hover, a:hover {
     color: #000000;
 }
 
-.learn-more {
-    cursor: pointer;
-    color: #FFFFFF;
-    padding: 10px 15px;
-    margin: 20px;
-    border-radius: 3px;
-    font-weight: bold;
-    cursor: pointer;
-    border: 2px #FFFFFF solid;
+.slide:nth-of-type(1) {
+    background: url(../images/landing-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.learn-more:hover {
-    background: #000000;
-    border-color: #000000;
+.slide:nth-of-type(2) {
+    background: url(../images/landing-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slide:nth-of-type(3) {
+    background: url(../images/landing-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+input[type="radio"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+input[type="radio"]:checked ~ .slide {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);   
+}
+
+input[type="radio"]:checked + .slide {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    z-index: 1;
+}
+
+input[type="radio"]:checked + .slide + .arrows {
+    z-index: 1;
 }
 
 
