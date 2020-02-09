@@ -241,7 +241,7 @@ input[type="radio"]:checked + .slide + .arrows {
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    background-color: #1A4E97;
+    background-color: #000000;
     padding: 50px 20px;
     width: 100%;
 }
