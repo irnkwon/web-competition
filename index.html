@@ -16,7 +16,7 @@
     <body>
         <!-- Navbar -->
         <nav id="navbar">
-            <ul>
+            <ul class="row">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#visit">Visit</a></li>
                 <li><a href="#explore">Explore</a></li>
@@ -25,16 +25,18 @@
         </nav>
 
         <!-- Home -->
-        <section id="home">
+        <section id="home" class="column">
+            <!-- <img src="images/landing-1.jpg" alt="landing-image-1" /> -->
+            
             <h1>Vancouver Aquarium</h1>
-            <p>earum similique, cum neque, aut quibusdam rerum cupiditate dolorum corrupti</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
             <i class="fas fa-chevron-left fa-2x"></i>
             <i class="fas fa-chevron-right fa-2x"></i>
             <div class="learn-more">Learn More</div>
         </section>
 
         <!-- Visit -->
-        <section id="visit">
+        <section id="visit" class="column">
             <div class="visit-heading">Visit</div>
             <div class="visit-desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -53,7 +55,7 @@
         </section>
 
         <!-- Explore -->
-        <section id="explore">
+        <section id="explore" class="column">
             <div class="explore-heading">Explore</div>
             <div class="explore-desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -72,7 +74,7 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact">
+        <section id="contact" class="column">
             <div class="contact-heading">Contact</div>
             <div class="contact-desc">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -91,45 +93,40 @@
         </section>
 
         <!-- Footer -->
-        <section id="footer">
-            <div class="info-wrapper">
+        <section id="footer" class="column">
+            <div class="row">
+                <div><img src="images/map.png" alt="map-image" class="map" /></div>
                 <div>
                     <h2>Vancouver Aquarium</h2>
-                    <div class="phone">
-                        <i class="fas fa-phone-alt"></i>
-                        <h5>Phone</h5> +1 (234) 456-7890
+                    <div><span class="strong">Phone</span>+1 (234) 456-7890</div>
+                    <div><span class="strong">Address</span>845 Avision Way, Vancouver, BC V6G 3E2</div>
+                    <div class="row">
+                        <div>
+                            <h4>Menu</h4>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#visit">Visit</a></li>
+                            <li><a href="#explore">Explore</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </div>
+                        <div>
+                            <h4>Socials</h4>
+                            <div class="social-icons column">
+                                <li><i class="far fa-envelope fa-1x"></i> Email</li>
+                                <li><i class="fab fa-facebook-f fa-1x"></i> Facebook</li>
+                                <li><i class="fab fa-instagram fa-1x"></i> Instagram</li>
+                                <li><i class="fab fa-twitter fa-1x"></i> Twitter</li>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Support</h4>
+                            <li><a>Lorem ipsum</a></li>
+                            <li><a>Lorem ipsum</a></li>
+                            <li><a>Lorem ipsum</a></li>
+                            <li><a>Lorem ipsum</a></li>
+                        </div>
                     </div>
-                    <div class="address">
-                        <i class="fas fa-map-pin"></i>
-                        <h5>Address</h5> 845 Avision Way, Vancouver, BC V6G 3E2
-                    </div>
-                    <!-- <img src="./images//map.png" alt="map-image" class="map" /> -->
                 </div>
-                <ul>
-                    <h4>Menu</h4>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#visit">Visit</a></li>
-                    <li><a href="#explore">Explore</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <ul>
-                    <h4>Socials</h4>
-                    <div class="social-icons">
-                        <div><i class="far fa-envelope fa-1x"></i> Email</div>
-                        <div><i class="fab fa-facebook-f fa-1x"></i> Facebook</div>
-                        <div><i class="fab fa-instagram fa-1x"></i> Instagram</div>
-                        <div><i class="fab fa-twitter fa-1x"></i> Twitter</div>
-                    </div>
-                </ul>
-                <ul>
-                    <h4>Support</h4>
-                    <li><a>Customer Service</a></li>
-                    <li><a>FAQ</a></li>
-                    <li><a>Explore</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
             </div>
-            <!-- <hr class="line" /> -->
             <div class="copyright">2020 © designed and developed by Irene Kwon</div>
         </section>
     </body>

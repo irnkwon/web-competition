@@ -9,12 +9,31 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 li {
     list-style: none;
     cursor: pointer;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.strong {
+    font-weight: 600;
+    margin-right: 10px;
 }
 
 
@@ -32,8 +51,6 @@ li {
 }
 
 #navbar ul {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-self: center;
     width: 400px;
@@ -54,10 +71,8 @@ a {
     background-size: cover;
     height: 100vh;
     color: #FFFFFF;
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
 }
 
@@ -91,8 +106,6 @@ a {
     Pages
 */
 #visit, #explore, #contact {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 10% 20%;
     height: 100%;
@@ -109,7 +122,7 @@ a {
     Explore
 */
 #explore {
-    background-color: rgb(11, 32, 61); 
+    background-color: #1A4E97; 
     color: #FFFFFF;
 }
 
@@ -118,42 +131,27 @@ a {
     Footer
 */
 #footer {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
     color: #FFFFFF;
-    background-color: rgb(14, 40, 77);
-    padding: 3% 5%;
+    background-color: #1A4E97;
+    padding: 50px 20px;
 }
 
-.social-icons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.map {
+    width: 500px;
+    margin-right: 30px;
 }
 
-.line {
-    width: 100%;
-    border-color: #F9F9F9;
+#footer .row > div {
+    margin-right: 35px
 }
 
-.info-wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3%;
+#footer .row div > li {
+    margin-bottom: 5px;
 }
 
 .copyright {
-    margin-top: 15px;
-}
-
-.phone, .address {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.phone > h5, .address > h5 { 
-    margin: 0 10px;
+    margin-top: 60px;
+    font-size: 12px;
 }
