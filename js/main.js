@@ -23,7 +23,6 @@ function scrollToVisit() {
 */
 function changeNavOnScroll() {
     var from = $('#visit').offset().top;
-
     $(window).scroll(function() {
         if ($(window).scrollTop() > from) {
             $('#navbar').css("background", "#000000");
