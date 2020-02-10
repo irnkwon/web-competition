@@ -81,7 +81,6 @@ li:hover, a:hover {
 }
 
 .social-icons {
-    display: flex;
     width: 100px;
     justify-content: space-between;
     margin-left: 10%;
